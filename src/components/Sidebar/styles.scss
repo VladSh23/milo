@@ -1,0 +1,96 @@
+.sidebar {
+  box-sizing: border-box;
+  min-width: 260px;
+  padding: 20px 15px;
+  transition: 0.2s;
+  border-right: 1px solid lightgrey;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+
+  .nav-container {
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+    margin: 20px 0;
+    width: 100%;
+
+    > a {
+      width: auto;
+      height: auto;
+      padding: 7px;
+      border: none;
+      background: transparent;
+      outline: none;
+      transition: 0.2s;
+      border-radius: 4px;
+      cursor: pointer;
+      text-decoration: none;
+      color: black;
+      font-weight: 600;
+
+      &:hover {
+        background: #c2c2c28f;
+      }
+    }
+
+    @media screen and (min-width: 800px) {
+      display: none;
+    }
+  }
+
+  &.closed {
+    width: 0px;
+    min-width: 0px;
+    padding-left: 0;
+    padding-right: 0;
+    overflow: hidden;
+  }
+
+  &__items {
+    overflow: auto;
+    width: 100%;
+    padding-top: 32px;
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+    > a {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      width: auto;
+      height: auto;
+      padding: 7px;
+      border: none;
+      background: transparent;
+      outline: none;
+      transition: 0.2s;
+      border-radius: 4px;
+      cursor: pointer;
+      text-decoration: none;
+      color: black;
+      font-weight: 600;
+
+      &.isActive {
+        background: #c2c2c28f
+      }
+  
+      &:hover {
+        background: #c2c2c28f;
+        .delete-icon {
+          opacity: 1;
+        }
+      }
+
+      .delete-icon {
+        width: 20px;
+        height: 20px;
+        opacity: 0;
+        transition: 0.2s;
+        path {
+          fill: rgb(255, 141, 141);
+        }
+      }
+    }
+  }
+}

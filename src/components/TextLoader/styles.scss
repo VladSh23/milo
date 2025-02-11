@@ -1,0 +1,16 @@
+.loader {
+  animation: cursor 1s infinite step-end;
+  border-right: 2px solid;
+  height: 19px;
+  width: 2px;
+}
+
+@keyframes cursor {
+  0%,
+  100% {
+    border-color: transparent;
+  }
+  50% {
+    border-color: rgb(245, 240, 185);
+  }
+}

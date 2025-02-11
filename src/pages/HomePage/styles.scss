@@ -1,0 +1,25 @@
+.home-layout {
+  overflow-x: clip;
+  .sidebar, .sidebar > .sidebar-button, .header-content > .sidebar-button {
+    @media screen and (min-width: 800px) {
+      display: none;
+    }
+  }
+  .sidebar {
+    max-height: 100vh;
+    position: sticky;
+    top: 0;
+  }
+  .main-layout__content {
+    position: relative;
+  }
+  header {
+    position: sticky;
+    top: 0;
+    background: #f2f2eb;
+  }
+  .body {
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+}

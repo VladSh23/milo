@@ -1,0 +1,28 @@
+.terminal-page {
+  overflow: hidden;
+  height: 100vh !important;
+  min-height: unset !important;
+  background: rgb(2, 26, 32);
+  color: rgb(245, 240, 185);
+  header .header-content > a, .nav-container > a, .sidebar__items > a, #prompt {
+    color: rgb(245, 240, 185) !important;
+  }
+  .sidebar-button > svg path {
+    fill: rgb(245, 240, 185);
+  }
+  .body {
+    padding: 20px;
+    display: flex;
+    flex-grow: 1;
+    overflow: auto;
+  }
+
+  &__content {
+    padding: 32px;
+    border-radius: 4px;
+    border: 2px solid lightcoral;
+    width: 100%;
+    font-family: monospace;
+    overflow: auto;
+  }
+}
