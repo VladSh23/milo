@@ -1,5 +1,8 @@
 {
   "projects": {
-    "default": "milo-b3be0"
-  }
+    "default": "milo-b3be0",
+    "prod": "miloprotocol"
+  },
+  "targets": {},
+  "etags": {}
 }
